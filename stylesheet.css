@@ -758,8 +758,8 @@ h1,h2{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    body {font-size: 16px;}
-    .footer {bottom:46em; right:23em;}
+    body {font-size: 18px;}
+    .footer {bottom:10em; right:5em;}
 
 }
 
@@ -769,9 +769,9 @@ h1,h2{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
-    body {font-size: 12px;}
-    .hero {top:39%; left: 39%;}
-    .footer {bottom: 35em; right: 46em;}
+    body {font-size: 18px;}
+    .hero {top:50%; left: 50%;}
+    .footer {bottom: 10em; right: 3em;}
 
 }
 /* ----------- iPhone 6 ----------- */
@@ -782,8 +782,8 @@ h1,h2{
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    body {font-size: 32px;}
-    .footer {bottom:46em; right:23em;}
+    body {font-size: 18px;}
+    .footer {bottom:10em; right:5em;}
 }
 
 /* Landscape */
@@ -792,9 +792,9 @@ h1,h2{
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-        body {font-size: 12px;}
-        .hero {top:39%; left: 39%;}
-        .footer {bottom: 37em; right: 46em;}
+        body {font-size: 18px;}
+        .hero {top:50%; left: 50%;}
+        .footer {bottom: 10em; right: 3em;}
 }
 
 
