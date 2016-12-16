@@ -590,7 +590,7 @@ template {
     position: relative;
     top: 5px;
     left: 20px;
-    background-image: url(../assets/icons/Search.svg);
+    background-image: url(../assets/icons/search.svg);
     background-size: cover;
   }
 
