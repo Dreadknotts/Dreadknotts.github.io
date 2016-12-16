@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>One Smash Dojo</title>
+    <meta name="description" content="Dojo">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script type="text/javascript" src="js/onesmash.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+
+      <section class="header header-mini">
+        <div class="container container-mini">
+          <span class="title-mini">One stop for Smash 4 tech</span>
+          <ul class="menu-mini">
+            <li class="menu-mini-link">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfG6VJeZ6TrOsyFpedoxGI7nLZgyxk9MLhwbkOOeW6bMjhEMA/viewform" target="_blank">Submit Tech｜</a></li>
+            <li class="menu-mini-link">
+              <a href="https://twitter.com/servingsmash" target="_blank">｜Contact</a></li>
+            <li class="spacer-mini"></li>
+            <li class="icon-mini" id="twitter">
+              <a href="https://twitter.com/servingsmash" target="_blank" class="icon-click">
+              </a></li>
+            <li class="icon-mini" id="facebook">
+              <a href="https://www.facebook.com/OneSmash.net" target="_blank" class="icon-click">
+              </a></li>
+          </ul>
+        </div>
+      </section>
+
+      <header class="header header-sitenav">
+        <div class="container container-sitenav">
+          <div class="icon-onesmash">
+            <a href="index.html" title="One Smash" class="icon-sitenav-favicon">
+            </a>
+            <a href="index.html" title="One Smash" class="icon-sitenav-logomark">
+              <h1 id="fav-one">ONE</h1><h1 id="fav-smash">SMASH</h1>
+            </a>
+          </div>
+          <nav class="nav-sitenav">
+            <ul class="menu-sitenav">
+              <!-- Add active class to know which one has box -->
+              <li class="menu-sitenav-link">
+                <a href="index.html">DOJO</a></li>
+              <li class="menu-sitenav-link">
+                <a href="tech.html">TECH</a></li>
+              <li class="menu-sitenav-link">
+                <a href="about.html">ABOUT</a></li>
+              <li class="menu-sitenav-search">
+                <a class="icon-search" href="/site/#">
+                </a>
+                <form id="form-search" action="/" method="get" style="overflow: hidden; opacity: 0; width: 0px;">
+                  <div class="form-search-input-box">
+                    <input id="form-search-input" type="search" placeholder="Search..." name="search" size="30">
+                    <input type="submit" id="search-submit" style="display:none" value="submit">
+                  </div>
+                </form>
+               </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="header header-sub" id="banner-tech">
+        <div class="container-sub">
+          <div class="title-sub">
+            <h2> TECH </h2>
+            <p> Every week, OneSmash provides players with new universal Smash 4 tech in out Tech of the Week video series. We also provide other videos of more common tech that can vastly improve your game.</p>
+          </div>
+          <div class="icon-sub" id="fav-tech">
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer-header"></div>
+
+      <main class="body-primary">
+        <div class="container container-primary">
+          <section class="header header-primary">
+            <div class="title-primary">
+              <h2>TECH</h2>
+            </div>
+            </button>
+          </section>
+          <section class="menu-primary">
+            <ul class="roster">
+
+            <!--01 -->
+              <li class="tech">
+                <a href="#techModal" data-toggle="modal">
+                  <div class="tech-favicon">
+                      <p class="tech-number">01</p>
+                  </div>
+                  <div class="tech-name">
+                    <h2 class="tech-name-text">STANDING SHEILD DROP</h2>
+                  </div>
+                </a>
+              </li>
+
+          <!--02 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">02</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">TRIPLE OPTION SELECT</h2>
+                </div>
+              </a>
+            </li>
+
+
+          <!--03 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 21px;">03</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">BOUNCE TECH</h2>
+                </div>
+              </a>
+            </li>
+
+
+          <!--04 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">04</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">FOOTSTOOLS 101</h2>
+                </div>
+              </a>
+            </li>
+
+
+          <!--05-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">05</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">SHIELD IMPACT MOVE OS</h2>
+                </div>
+              </a>
+            </li>
+
+
+            <!--06 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 21px;">06</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">SHIELDING 101</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--07-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">07</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">LEDGE DENIAL</h2>
+                </div>
+              </a>
+            </li>
+
+
+            <!--08 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">08</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">HIP CHECK</h2>
+                </div>
+              </a>
+            </li>
+
+
+            <!--09 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">09</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">PRATTACKS</h2>
+                </div>
+              </a>
+            </li>
+
+
+            <!--10-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">10</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">FAST FALL BREAK</h2>
+                </div>
+              </a>
+            </li>
+
+
+            <!--11 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">11</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">SNAP BACK</h2>
+                </div>
+              </a>
+            </li>
+
+
+              <!--12 -->
+              <li class="tech">
+              <a href="#"  data-toggle="modal">
+                  <div class="tech-favicon">
+                      <p class="tech-number" style="left: 23px;">12</p>
+                  </div>
+                  <div class="tech-name">
+                    <h2 class="tech-name-text">SLOW RUN</h2>
+                  </div>
+                </a>
+              </li>
+
+
+            <!--13-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">13</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">DELAY</h2>
+                </div>
+              </a>
+            </li>
+
+              <!--14 -->
+              <li class="tech">
+                <a href="#"  data-toggle="modal">
+                  <div class="tech-favicon">
+                      <p class="tech-number">14</p>
+                  </div>
+                  <div class="tech-name">
+                    <h2 class="tech-name-text">TRUMP JUMP</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--15 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">15</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">SLIP LEDGE</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--16-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">16</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">AERIAL CHECK</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--17 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">17</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">U-TURN</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--18 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">18</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">MOON LANDING</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--19-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number" style="left: 23px;">19</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">SLING SHOT</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--20-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">20</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">BODY ROCK</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--21 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">21</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">BODY TECH</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--22 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">22</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">A-LANDING</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--23-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">23</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">PERFECT PARRY</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--24 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">24</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">PARRY SHIELD GRAB</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--25 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">25</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">PARRY IMPACT OS</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--26 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">26</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">HIT PAUSE OS</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--27-->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">27</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">FOOTSTOOL OS</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--28 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">28</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">21XX OS</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--29 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">29</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">BIDOU TECHNIQUE</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--30 -->
+            <li class="tech">
+              <a href="#"  data-toggle="modal">
+                <div class="tech-favicon">
+                    <p class="tech-number">30</p>
+                </div>
+                <div class="tech-name">
+                  <h2 class="tech-name-text">PERFECT PIVOTS</h2>
+                </div>
+              </a>
+            </li>
+
+            <!--Blank-->
+              <li class="blank">
+              </li>
+            <!--Blank-->
+              <li class="blank">
+              </li>
+            <!--Blank-->
+              <li class="blank">
+              </li>
+            <!--Blank-->
+              <li class="blank">
+              </li>
+            <!--Blank-->
+              <li class="blank">
+              </li>
+            <!--Blank-->
+              <li class="blank">
+              </li>
+
+
+            </ul>
+          </section>
+        </div>
+      </main>
+
+<!-- Modals-->
+<!-- M1 -->
+    <div id="techModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                  <iframe id="tech01" width="560" height="315" src="http://www.youtube.com/embed/uEjcrlk-u8s" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="spacer-footer"></div>
+
+      <footer class="footer">
+        <div class="container container-footer">
+          <ul class="menu-footer">
+            <li class="menu-footer-link">
+              <a href="/Submit">Submit Tech｜</a></li>
+            <li class="menu-footer-link">
+              <a href="/Contact">｜Contact</a></li>
+            <li class="spacer-mini"></li>
+            <li class="icon-mini" id="twitter">
+              <a href="https://twitter.com/servingsmash" class="icon-click">
+              </a></li>
+            <li class="icon-mini" id="facebook">
+              <a href="https://www.facebook.com/OneSmash.net" class="icon-click">
+              </a></li>
+          </ul>
+          <div class="icon-footer"></div>
+          <div class="footer-text">
+            <span class="title-footer" id="grey">One stop for Smash 4 tech</span>
+            <span class="title-footer" id="red">Developer:</span>
+            <span class="title-footer" id="white">Julien van Putten</span>
+            <span class="title-footer" id="red">2016 Onesmash.net</span>
+        </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

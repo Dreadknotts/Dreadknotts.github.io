@@ -1,0 +1,1363 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: 'Arvo', serif;/* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Fonts
+   ========================================================================== */
+  @font-face {
+    font-family: "Metropolis";
+    src: url('../assets/fonts/metropolis-light.woff2') format('woff2'),
+         url('../assets/fonts/metropolis-light.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Metropolis";
+    src: url('../assets/fonts/metropolis-bold.woff2') format('woff2'),
+         url('../assets/fonts/metropolis-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+  background-color: #ececf5;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+
+/*Start of Dojo CSS*/
+  .body-wrapper{}
+  .body-page{}
+  .body-primary{
+    width: 100%;
+  }
+
+/*Nav*/
+  .nav-sitenav {
+    float: right;
+    right: 20px;
+    bottom: 98px;
+    position: relative;
+    overflow: inherit;
+    z-index: 100;
+    width: 500px;
+    height: inherit;
+  }
+/*Banner*/
+#banner-dojo {
+  background-image: url("../assets/banners/dojo.png");
+  background-size: cover;
+}
+#banner-tech {
+  background-image: url("../assets/banners/tech.png");
+  background-size: cover;
+}
+#banner-about {
+  background-image: url("../assets/banners/about.png");
+  background-size: cover;
+}
+/*Headers*/
+  .header {
+    width: 100%;
+  }
+  .header-mini {
+    background-color: #222831;
+    height: 35px;
+    font-size: 12px;
+  }
+  .header-sitenav {
+    position: absolute;
+    background-color: #e8495f;
+    height: 80px;
+  }
+  .header-sub {
+    top: 115px;
+    position: absolute;
+    height: 150px;
+  }
+  .header-primary{
+
+  }
+
+/*Containers*/
+  .container {
+    height: inherit;
+    margin: 0 40px;
+  }
+  .container-mini {}
+  .container-sitenav {}
+  .container-primary {}
+
+
+/*Menus*/
+  .menu{}
+  .menu-mini{
+    font-family: Metropolis;
+    float: right;
+    margin: 12px;
+  }
+  ul.menu-mini > li {
+    float: left;
+    display: inline-block;
+  }
+  .menu-mini-link > a {
+    color: #e8495f;
+    text-decoration: none;
+    transition: color .3s ease-out;
+  }
+  .menu-mini-link > a:hover {
+    color:#ecebf5;
+  }
+  .menu-sitenav {
+    font-family: Metropolis;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 21px 0;
+  }
+  ul.menu-sitenav > li {
+    display: inline-block;
+    margin: 0 0 0 0px;
+  }
+  .menu-sitenav-link > a {
+    color: #222831;
+    text-decoration: none;
+    padding: 32px 20px 32px 20px;
+    transition: color .5s ease-out, background-color .2s ease-out;
+  }
+
+  .menu-sitenav-link > a:hover {
+    color: #ecebf5;
+    background-color: rgba(236, 236, 245, 0.2);
+  }
+  .menu-sitenav-search {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    background-image: url(../assets/icons/Search.svg);
+    background-size: cover;
+  }
+
+  .menu-footer{
+    font-family: Metropolis;
+    float: left;
+    margin: 25px 0;
+    padding: 0;
+  }
+  ul.menu-footer > li {
+    float: left;
+    display: inline-block;
+  }
+  .menu-footer-link > a {
+    color: #e8495f;
+    text-decoration: none;
+  }
+
+/*Titles*/
+  .title{}
+
+  .title-mini {
+    font-family: Metropolis;
+    float: left;
+    display: inline-block;
+    color: grey;
+    padding-top: 12px;
+  }
+
+  .title-sub {
+    float: left;
+    display: inline-block;
+    margin: 1px 40px;
+    color: white;
+  }
+
+  .title-sub h2 {
+    font-family: Metropolis;
+    margin: 15px 0;
+  }
+
+  .title-sub p {
+    width: 450px;
+    font-size: 14px;
+    margin: -5px 0;
+    font-family: Arvo;
+    letter-spacing: 1px;
+  }
+
+  .title-primary {
+    display: inline-block;
+    font-family: Metropolis;
+    font-weight: bold;
+    color: #222831;
+    margin: 0px;
+  }
+
+  .title-footer {
+    font-family: Metropolis;
+    float: left;
+    display: inline-block;
+    padding-top: 60px;
+    padding-right: 10px;
+
+  }
+
+/*Footer*/
+  .footer {
+    width: 100%;
+    height: 100px;
+    background-color: #222831;;
+    font-size: 14px;
+  }
+
+  .footer-text {
+    position: absolute;
+    margin-left: 0px;
+  }
+
+/*Spacers*/
+  .spacer-header {
+    width: 100%;
+    height: 270px;
+  }
+  .spacer-mini {
+    width: 20px;
+    height: 12px;
+  }
+  .spacer-footer {
+    width: 100%;
+    height: 100px;
+
+  }
+
+/*Icons*/
+
+  .icon-click {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-mini {
+    width: 25px;
+    height: 25px;
+    margin: -7px 5px;
+    transition: background-image .2s ease-out;
+  }
+
+  .icon-mini:hover#twitter {
+    background-image: url(../assets/icons/twitter-hover.svg);
+    background-size: cover;
+  }
+
+  .icon-mini:hover#facebook {
+    background-image: url(../assets/icons/facebook-hover.svg);
+    background-size: cover;
+  }
+
+  .icon-sitenav-favicon {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background-image: url(../assets/icons/favicon.svg);
+    background-size: cover;
+    z-index: 100;
+    transition: background-image .2s ease-out;
+  }
+  .icon-onesmash:hover .icon-sitenav-favicon {
+    background-image: url(../assets/icons/favicon-Hover.svg);
+  }
+
+  .icon-sitenav-logomark {
+    position: relative;
+    display: inline-block;
+    font-family: Metropolis;
+    font-weight: bold;
+    z-index: 100;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+  }
+
+  .icon-onesmash:hover #fav-smash {
+    color: white;
+  }
+
+  .icon-onesmash:hover #fav-one {
+    color: #222831;
+  }
+
+  .icon-onesmash {
+    position: relative;
+    margin: 9px 0px;
+    z-index: 0;
+    width: 500px;
+    height: inherit;
+  }
+
+  .icon-search {
+  }
+
+  .icon-sub {
+    position: relative;
+    float: right;
+    right: 40px;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+  }
+  .icon-footer {
+    width: 60px;
+    height: 60px;
+    float: right;
+    display: inline-block;
+    background-image: url(../assets/icons/footericon.svg);;
+    background-size: cover;
+    margin-top: 20px
+
+  }
+/*Buttons*/
+  .btn {
+    display: inline-block;
+    border: none;
+    color: white;
+    background-color: #222831;
+    transition: color .5s ease-out, background-color .2s ease-out;
+  }
+
+  .btn:hover {
+    color: #222831;
+    background-color: #e8495f;
+  }
+
+  .btn.active {
+    color: #222831;
+    background-color: #e8495f;
+  }
+
+/*Dojo*/
+  .filter-dojo {
+    float: right;
+    width: 140px;
+    height: 24px;
+    margin-top: 20px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+  }
+
+  .dropdown-dojo {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 0px;
+    margin: 0px;
+    right: 6px;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: arvo;
+    font-size: 14px;
+    list-style: none;
+    transition: all 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .btn.active .dropdown-dojo{
+    max-height: 400px;
+  }
+
+  .dropdown-dojo > li {
+    z-index: 100;
+    background-color: #222831;
+    text-align: left;
+    padding: 0 0;
+  }
+
+  .dropdown-dojo > li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid 1px solid rgba(230,232,234,0.25);
+  }
+
+  .dropdown-dojo > li:nth-child(even){
+        background-color: #2a313c;
+  }
+
+  .dropdown-dojo > li:last-of-type a {
+    border: none;
+  }
+
+  .dropdown-dojo > li:hover a {
+    color: red;
+    background-color: white;
+  }
+
+  .hidden{
+    display: none !important;
+  }
+
+/*Tech*/
+  .tech {
+    width: 140px;
+    height: 150px;
+    background-color: #393e46;
+    list-style: none;
+    display: inline-block;
+    margin: 14px 5px 14px 5px;
+    transition: background-color .8s ease-out;
+  }
+
+  .tech a {
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 150px;
+    color: white;
+    transition: background-color .8s ease-out;
+  }
+
+  .tech:hover {
+    background-color: #e8495f;;
+  }
+  .tech a:hover .tech-number{
+    color:#222831 ;
+  }
+  .tech a:hover .tech-name{
+    background-color: #ff847c;
+  }
+  .tech a:hover .tech-name-text {
+    color: #222831;
+  }
+  .tech a:hover .tech-favicon {
+    background-image: url(../assets/icons/FooterIcon.svg);
+
+  }
+
+  .tech-name {
+    position: relative;
+    bottom: 22px;
+    width: 140px;
+    height: 93px;
+    background-color: #222831;
+    transition: background-color .8s ease-out;
+  }
+
+  .tech-name-text {
+    padding-top: 30px;
+    padding-left: 10px;
+    width: 110px;
+    transition: background-color .8s ease-out;
+  }
+
+  .tech-favicon {
+    position: relative;
+    top: -9px;
+    background-image: url(../assets/icons/VidFavicon.svg);
+    background-size: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    transition: background-color 1s ease-out;
+    font-size: 10px;
+    color: #e8495f;
+    font-family: Metropolis;
+    transition: .4s ease-out;
+  }
+
+/*Numbers*/
+  .tech-number {
+    position: relative;
+    top: 23px;
+    left: 22px;
+  }
+
+/*About*/
+  .about {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      font-family: Arvo;
+  }
+
+  .about-textbox {
+    display: inline-block;
+    width: 500px;
+  }
+  .about-text {}
+
+  .kirbykid-splash {
+    display: inline-block;
+    margin-right: 60px;
+    float: right;
+    width: 400px;
+    height: 400px;
+    background-image: url(../assets/pictures/kk.png);
+    background-size: cover;
+  }
+
+/*Character Roster*/
+  .roster {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    font-family: Metropolis;
+    font-weight: bold;
+  }
+
+  .blank {
+    width: 140px;
+    display: inline-block;
+    margin: 14px 5px 14px 5px;
+  }
+
+  .character {
+    width: 140px;
+    height: 150px;
+    background-color: rgba(34, 40, 49, 1);
+    list-style: none;
+    display: inline-block;
+    margin: 14px 5px 14px 5px;
+  }
+
+  .character a {
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 150px;
+    color: white;
+  }
+  .character a:hover {
+    box-shadow: inset 0 0 0 3px #ff847c;
+  }
+  .character a:hover .overlay{
+    background-color: rgba(255, 132, 124, 0.5);;
+  }
+  .character a:hover .name{
+    background-color: #ff847c;
+  }
+  .character a:hover .name-text {
+    color: #222831;
+  }
+
+  .overlay {
+    background-color: rgba(34, 40, 49, .7);
+    width: 140px;
+    height: 140px;
+    transition: background-color .6s ease-out;
+  }
+
+  .name {
+    position: relative;
+    bottom: 44px;
+    width: 140px;
+    height: 40px;
+    background-color: #222831;
+    transition: background-color .6s ease-out;
+  }
+
+  .name-text {
+    padding-top: 12px;
+    padding-left: 10px;
+    width: 140px;
+    transition: background-color .4s ease-out;
+  }
+
+/*Character ids*/
+  #bayonetta {
+    background-image: url(../assets/characters/bayo.png);
+    background-size: 140px;
+  }
+
+  #bowser {
+    background-image: url(../assets/characters/bowser.png);
+    background-size: 140px;
+  }
+
+  #bowserjr {
+    background-image: url(../assets/characters/bowserjr.png);
+    background-size: 140px;
+  }
+  #captainfalcon {
+    background-image: url(../assets/characters/captfalcon.png);
+    background-size: 140px;
+  }
+  #charizard {
+    background-image: url(../assets/characters/charizard.png);
+    background-size: 140px;
+  }
+  #cloud {
+    background-image: url(../assets/characters/cloud.png);
+    background-size: 140px;
+  }
+  #corrin {
+    background-image: url(../assets/characters/corrin.png);
+    background-size: 140px;
+  }
+  #darkpit {
+    background-image: url(../assets/characters/darkpit.png);
+    background-size: 140px;
+  }
+  #diddykong {
+    background-image: url(../assets/characters/diddy.png);
+    background-size: 140px;
+  }
+  #donkeykong {
+    background-image: url(../assets/characters/dk.png);
+    background-size: 140px;
+  }
+  #drmario {
+    background-image: url(../assets/characters/drmario.png);
+    background-size: 140px;
+  }
+  #duckhunt {
+    background-image: url(../assets/characters/duckhunt.png);
+    background-size: 140px;
+  }
+  #falco {
+    background-image: url(../assets/characters/falco.png);
+    background-size: 140px;
+  }
+  #fox {
+    background-image: url(../assets/characters/fox.png);
+    background-size: 140px;
+  }
+  #gameandwatch {
+    background-image: url(../assets/characters/g&w.png);
+    background-size: 140px;
+  }
+  #ganondorf {
+    background-image: url(../assets/characters/ganon.png);
+    background-size: 140px;
+  }
+  #greninja {
+    background-image: url(../assets/characters/greninja.png);
+    background-size: 140px;
+  }
+  #ike {
+    background-image: url(../assets/characters/ike.png);
+    background-size: 140px;
+  }
+  #jigglypuff {
+    background-image: url(../assets/characters/jigglypuff.png);
+    background-size: 140px;
+  }
+  #kingdedede {
+    background-image: url(../assets/characters/dedede.png);
+    background-size: 140px;
+  }
+  #kirby {
+    background-image: url(../assets/characters/kirby.png);
+    background-size: 140px;
+  }
+  #link {
+    background-image: url(../assets/characters/link.png);
+    background-size: 140px;
+  }
+  #littlemac {
+    background-image: url(../assets/characters/littlemac.png);
+    background-size: 140px;
+  }
+  #lucario {
+    background-image: url(../assets/characters/lucario.png);
+    background-size: 140px;
+  }
+  #lucas {
+    background-image: url(../assets/characters/lucas.png);
+    background-size: 140px;
+  }
+  #lucina {
+    background-image: url(../assets/characters/lucina.png);
+    background-size: 140px;
+  }
+  #luigi {
+    background-image: url(../assets/characters/luigi.png);
+    background-size: 140px;
+  }
+  #mario {
+    background-image: url(../assets/characters/mario.png);
+    background-size: 140px;
+  }
+  #marth {
+    background-image: url(../assets/characters/marth.png);
+    background-size: 140px;
+  }
+  #megaman {
+    background-image: url(../assets/characters/megaman.png);
+    background-size: 140px;
+  }
+  #metaknight {
+    background-image: url(../assets/characters/metaknight.png);
+    background-size: 140px;
+  }
+  #mewtwo {
+    background-image: url(../assets/characters/mewtwo.png);
+    background-size: 140px;
+  }
+  #miifighter {
+    background-image: url(../assets/characters/mii.png);
+    background-size: 140px;
+  }
+  #ness {
+    background-image: url(../assets/characters/ness.png);
+    background-size: 140px;
+  }
+  #olimar {
+    background-image: url(../assets/characters/olimar.png);
+    background-size: 140px;
+  }
+  #pacman {
+    background-image: url(../assets/characters/pacman.png);
+    background-size: 140px;
+  }
+  #palutena {
+    background-image: url(../assets/characters/palutena.png);
+    background-size: 140px;
+  }
+  #peach {
+    background-image: url(../assets/characters/peach.png);
+    background-size: 140px;
+  }
+  #pikachu {
+    background-image: url(../assets/characters/pikachu.png);
+    background-size: 140px;
+  }
+  #pit {
+    background-image: url(../assets/characters/pit.png);
+    background-size: 140px;
+  }
+  #rob {
+    background-image: url(../assets/characters/rob.png);
+    background-size: 140px;
+  }
+  #robin {
+    background-image: url(../assets/characters/robin.png);
+    background-size: 140px;
+  }
+  #rosaluma {
+    background-image: url(../assets/characters/rosaluma.png);
+    background-size: 140px;
+  }
+  #roy {
+    background-image: url(../assets/characters/roy.png);
+    background-size: 140px;
+  }
+  #ryu {
+    background-image: url(../assets/characters/ryu.png);
+    background-size: 140px;
+  }
+  #samus {
+    background-image: url(../assets/characters/samus.png);
+    background-size: 140px;
+  }
+  #sheik {
+    background-image: url(../assets/characters/sheik.png);
+    background-size: 140px;
+  }
+  #shulk {
+    background-image: url(../assets/characters/shulk.png);
+    background-size: 140px;
+  }
+  #sonic {
+    background-image: url(../assets/characters/sonic.png);
+    background-size: 140px;
+  }
+  #toonlink {
+    background-image: url(../assets/characters/toonlink.png);
+    background-size: 140px;
+  }
+  #villager {
+    background-image: url(../assets/characters/villager.png);
+    background-size: 140px;
+  }
+  #wario {
+    background-image: url(../assets/characters/wario.png);
+    background-size: 140px;
+  }
+  #wiifit {
+    background-image: url(../assets/characters/wiifit.png);
+    background-size: 140px;
+  }
+  #yoshi {
+    background-image: url(../assets/characters/yoshi.png);
+    background-size: 140px;
+  }
+  #zelda {
+    background-image: url(../assets/characters/zelda.png);
+    background-size: 140px;
+  }
+  #z-suit {
+    background-image: url(../assets/characters/zerosuit.png);
+    background-size: 140px;
+  }
+
+/*Icons*/
+  #fav-one {
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+    transition: color .2s ease-out;
+  }
+  #fav-smash {
+    display: inline-block;
+    transition: color .2s ease-out;
+    color: #222831;
+  }
+  #fav-dojo {
+    background-image: url(../assets/icons/dojo.svg);
+    background-size: cover;
+  }
+  #fav-tech {
+    background-image: url(../assets/icons/tech.svg);
+    background-size: cover;
+  }
+  #fav-about {
+    background-image: url(../assets/icons/about.svg);
+    background-size: cover;
+  }
+  #twitter {
+    background-image: url(../assets/icons/twitter.svg);
+    background-size: cover;
+  }
+  #facebook {
+    background-image: url(../assets/icons/facebook.svg);
+    background-size: cover;
+  }
+  #filter-text {
+    margin: 4px 0px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+/*text Colors*/
+  #white {color:#ecebf5}
+  #grey {color: grey;}
+  #red {color: #e8495f;}
+  #blue {color:#222831;}
+
+/*Categories*/
+  .bait-punish{}
+  .grappler{}
+  .zoner{}
+  .rushdown{}
+  .turtle{}
+  .footsies{}
+  .precision{}
+  .hit-run{}
+  .all-rounder{}
+
+/*Modal*/
+
+.modal-backdrop.in {
+	filter: alpha(opacity=7);
+	opacity: 0.7;
+}
+
+.modal-content {
+	background: none;
+	border: 0;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.modal-content iframe{
+     margin: 0 auto;
+     display: block;
+ }
+
+.modal-body {
+	padding: 0 25px 25px 25px;
+}
+
+.modal-header {
+	padding: 25px 25px 15px 25px;
+	text-align: right;
+}
+
+.modal-header, .modal-footer {
+	border: 0;
+}
+
+.modal-header .close {
+	float: none;
+	margin: 0;
+	font-size: 36px;
+	color: #fff;
+	font-weight: 300;
+	text-shadow: none;
+	opacity: 1;
+}

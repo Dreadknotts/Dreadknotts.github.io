@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>One Smash Dojo</title>
+    <meta name="description" content="Dojo">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/onesmash.js"></script>
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+
+      <section class="header header-mini">
+        <div class="container container-mini">
+          <span class="title-mini">One stop for Smash 4 tech</span>
+          <ul class="menu-mini">
+            <li class="menu-mini-link">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfG6VJeZ6TrOsyFpedoxGI7nLZgyxk9MLhwbkOOeW6bMjhEMA/viewform" target="_blank">Submit Tech｜</a></li>
+            <li class="menu-mini-link">
+              <a href="https://twitter.com/servingsmash" target="_blank">｜Contact</a></li>
+            <li class="spacer-mini"></li>
+            <li class="icon-mini" id="twitter">
+              <a href="https://twitter.com/servingsmash" target="_blank" class="icon-click">
+              </a></li>
+            <li class="icon-mini" id="facebook">
+              <a href="https://www.facebook.com/OneSmash.net" target="_blank" class="icon-click">
+              </a></li>
+          </ul>
+        </div>
+      </section>
+
+      <header class="header header-sitenav">
+        <div class="container container-sitenav">
+          <div class="icon-onesmash">
+            <a href="index.html" title="One Smash" class="icon-sitenav-favicon">
+            </a>
+            <a href="index.html" title="One Smash" class="icon-sitenav-logomark">
+              <h1 id="fav-one">ONE</h1><h1 id="fav-smash">SMASH</h1>
+            </a>
+          </div>
+          <nav class="nav-sitenav">
+            <ul class="menu-sitenav">
+              <!-- Add active class to know which one has box -->
+              <li class="menu-sitenav-link">
+                <a href="index.html">DOJO</a></li>
+              <li class="menu-sitenav-link">
+                <a href="tech.html">TECH</a></li>
+              <li class="menu-sitenav-link">
+                <a href="about.html">ABOUT</a></li>
+              <li class="menu-sitenav-search">
+                <a class="icon-search" href="/site/#">
+                </a>
+                <form id="form-search" action="/" method="get" style="overflow: hidden; opacity: 0; width: 0px;">
+                  <div class="form-search-input-box">
+                    <input id="form-search-input" type="search" placeholder="Search..." name="search" size="30">
+                    <input type="submit" id="search-submit" style="display:none" value="submit">
+                  </div>
+                </form>
+               </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="header header-sub" id="banner-dojo">
+        <div class="container-sub">
+          <div class="title-sub">
+            <h2> DOJO </h2>
+            <p> The Dojo is a community effort to listen to and organize the voices of Smash Community. As an open, collaborative platform, we use this data to provide services and tools to assist new players, veterans, streamers, and TOs. Every Smasher counts.</p>
+          </div>
+          <div class="icon-sub" id="fav-dojo">
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer-header"></div>
+
+      <main class="body-primary">
+        <div class="container container-primary">
+          <section class="header header-primary">
+            <div class="title-primary">
+              <h2>CHARACTERS</h2>
+            </div>
+            <button class="btn filter-dojo" id="dd">
+              <h3 id="filter-text">FILTER</h3>
+              <ul class="dropdown-dojo">
+                <li id="filter-all"><a href="#"> All Characters</a></li>
+                <li id="filter-ar"><a href="#">All-Rounder</a></li>
+                <li id="filter-rd"><a href="#">Rushdown</a></li>
+                <li id="filter-z"><a href="#">Zoner</a></li>
+                <li id="filter-t"><a href="#">Turtle</a></li>
+                <li id="filter-g"><a href="#">Grappler</a></li>
+                <li id="filter-p"><a href="#">Precision</a></li>
+                <li id="filter-f"><a href="#">Footsies</a></li>
+                <li id="filter-bp"><a href="#">Bait & Punish</a></li>
+                <li id="filter-hr"><a href="#">Hit & Run</a></li>
+              </ul>
+            </button>
+          </section>
+          <section class="menu-primary">
+            <ul class="roster">
+
+            <!--Character Name -->
+              <!-- <li class="character">
+                <a href="/" id="">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text"></h2>
+                  </div>
+                </a>
+              </li> -->
+
+            <!--Bayonetta -->
+              <li class="character bait-punish footsies">
+                <a href="http://kuroganehammer.com/Smash4/Bayonetta" id="bayonetta">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">BAYONETTA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Bowser -->
+              <li class="character grappler">
+                <a href="http://kuroganehammer.com/Smash4/Bowser" id="bowser">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">BOWSER</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Bowser Jr. -->
+              <li class="character zoner">
+                <a href="http://kuroganehammer.com/Smash4/bowser%20jr"id="bowserjr">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">BOWSER JR</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Captain Falcon -->
+              <li class="character bait-punish rushdown">
+                <a href="/" id="captainfalcon">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">CPT. FALCON</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Charizard -->
+              <li class="character all-rounder bait-punish">
+                <a href="/" id="charizard">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">CHARIZARD</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Cloud -->
+              <li class="character zoner footsies">
+                <a href="/" id="cloud">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">CLOUD</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Corrin -->
+              <li class="character zoner bait-punish">
+                <a href="/" id="corrin">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">CORRIN</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Dark Pit -->
+              <li class="character all-rounder footsies">
+                <a href="/" id="darkpit">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">DARK PIT</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Diddy Kong -->
+              <li class="character grappler all-rounder">
+                <a href="/" id="diddykong">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">DIDDY KONG</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Donkey Kong-->
+              <li class="character grappler">
+                <a href="/" id="donkeykong">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">DONKEY KONG</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Dr. Mario -->
+              <li class="character all-rounder bait-punish">
+                <a href="/" id="drmario">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">DR. MARIO</h2>
+                  </div>
+                </a>
+              </li>
+
+              <!--Duck Hunt -->
+                <li class="character turtle zoner">
+                  <a href="/" id="duckhunt">
+                    <div class="overlay"></div>
+                    <div class="name">
+                      <h2 class="name-text">DUCK HUNT</h2>
+                    </div>
+                  </a>
+                </li>
+
+            <!--Falco -->
+              <li class="character footsies precision">
+                <a href="/" id="falco">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">FALCO</h2>
+                  </div>
+                </a>
+              </li>
+
+              <!--Fox -->
+                <li class="character rushdown">
+                  <a href="http://kuroganehammer.com/Smash4/Fox" id="fox">
+                    <div class="overlay"></div>
+                    <div class="name">
+                      <h2 class="name-text">FOX</h2>
+                    </div>
+                  </a>
+                </li>
+
+            <!--Game and Watch -->
+              <li class="character hit-run bait-punish">
+                <a href="/" id="gameandwatch">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">GAME & WATCH</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Ganondorf -->
+              <li class="character grappler">
+                <a href="/" id="ganondorf">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">GANONDORF</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Greninja -->
+              <li class="character hit-run footsies">
+                <a href="/" id="greninja">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">GRENINJA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Ike -->
+              <li class="character footsies grappler">
+                <a href="/" id="ike">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">IKE</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Jigglypuff -->
+              <li class="character hit-run bait-punish">
+                <a href="/" id="jigglypuff">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">JIGGLYPUFF</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--King Dedede -->
+              <li class="character grappler zoner">
+                <a href="/" id="kingdedede">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">DEDEDE</h2>
+                  </div>
+                </a>
+              </li>
+
+              <!--Kirby -->
+                <li class="character grappler bait-punish">
+                  <a href="/" id="kirby">
+                    <div class="overlay"></div>
+                    <div class="name">
+                      <h2 class="name-text">KIRBY</h2>
+                    </div>
+                  </a>
+                </li>
+
+            <!--Link -->
+              <li class="character zoner turtle">
+                <a href="/" id="link">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LINK</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Little Mac -->
+              <li class="character footsies rushdown">
+                <a href="/" id="littlemac">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LITTLE MAC</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Lucario -->
+              <li class="character all-rounder footsies">
+                <a href="/" id="lucario">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LUCARIO</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Lucas -->
+              <li class="character hit-run all-rounder">
+                <a href="/" id="lucas">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LUCAS</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Lucina -->
+              <li class="character all-rounder">
+                <a href="/" id="lucina">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LUCINA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Luigi -->
+              <li class="character grappler">
+                <a href="/" id="luigi">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">LUIGI</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Mario -->
+              <li class="character all-rounder">
+                <a href="/" id="mario">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">MARIO</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Marth -->
+              <li class="character precision zoner">
+                <a href="/" id="marth">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">MARTH</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Mega man -->
+              <li class="character zoner hit-run">
+                <a href="/" id="megaman">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">MEGA MAN</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Meta Knight -->
+              <li class="character bait-punish precision">
+                <a href="/" id="metaknight">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">META KNIGHT</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Mewtwo -->
+              <li class="character zoner hit-run">
+                <a href="/" id="mewtwo">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">MEWTWO</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Mii Fighters -->
+              <li class="character rushdown zoner hit-run">
+                <a href="/" id="miifighter">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">Mii FIGHTERS</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Ness -->
+              <li class="character grappler all-rounder">
+                <a href="/" id="ness">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">NESS</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Olimar -->
+              <li class="character turtle">
+                <a href="/" id="olimar">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">OLIMAR</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Pac Man -->
+              <li class="character zoner">
+                <a href="/" id="pacman">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">PAC-MAN</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Palutena -->
+              <li class="character footsies">
+                <a href="/" id="palutena">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">PALUTENA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Peach-->
+              <li class="character rushdown precision">
+                <a href="/" id="peach">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">PEACH</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Pikachu-->
+              <li class="character rushdown hit-run precision">
+                <a href="/" id="pikachu">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">PIKACHU</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Pit-->
+              <li class="character all-rounder">
+                <a href="/" id="pit">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">PIT</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--R.O.B-->
+              <li class="character zoner hit-run">
+                <a href="/" id="rob">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">R.O.B</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Robin-->
+              <li class="character zoner">
+                <a href="/" id="robin">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">ROBIN</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Rosaluma-->
+              <li class="character zoner turtle">
+                <a href="/" id="rosaluma">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">ROSALUMA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Roy-->
+              <li class="character rushdown">
+                <a href="/" id="roy">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">ROY</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Ryu-->
+              <li class="character all-rounder footsies">
+                <a href="/" id="ryu">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">RYU</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Samus-->
+              <li class="character zoner turtle">
+                <a href="/" id="samus">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">SAMUS</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Sheik-->
+              <li class="character rushdown">
+                <a href="/" id="sheik">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">SHEIK</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Shulk-->
+              <li class="character all-rounder">
+                <a href="/" id="shulk">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">SHULK</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Sonic-->
+              <li class="character hit-run bait-punish">
+                <a href="/" id="sonic">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">SONIC</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Toon Link-->
+              <li class="character zoner turtle">
+                <a href="/" id="toonlink">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">TOON LINK</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Villager-->
+              <li class="character zoner turtle">
+                <a href="/" id="villager">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">VILLAGER</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Wario-->
+              <li class="character all-rounder bait-punish hit-run">
+                <a href="/" id="wario">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">WARIO</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Wii Fit-->
+              <li class="character hit-run all-rounder">
+                <a href="/" id="wiifit">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">Wii FIT</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Yoshi-->
+              <li class="character all-rounder rushdown">
+                <a href="/" id="yoshi">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">YOSHI</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Zelda-->
+              <li class="character zoner precision">
+                <a href="/" id="zelda">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">ZELDA</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Zero Suit Samus-->
+              <li class="character rushdown zoner">
+                <a href="/" id="z-suit">
+                  <div class="overlay"></div>
+                  <div class="name">
+                    <h2 class="name-text">ZERO SUIT</h2>
+                  </div>
+                </a>
+              </li>
+
+            <!--Blank-->
+              <li class="blank rushdown all-rounder zoner precision hit-run bait-punish turtle grappler footsies">
+              </li>
+
+            <!--Blank-->
+              <li class="blank rushdown all-rounder zoner precision hit-run bait-punish turtle grappler footsies">
+              </li>
+
+            <!--Blank-->
+              <li class="blank rushdown all-rounder zoner precision hit-run bait-punish turtle grappler footsies">
+              </li>
+
+            <!--Blank-->
+              <li class="blank rushdown all-rounder zoner precision hit-run bait-punish turtle grappler footsies">
+              </li>
+
+            <!--Blank-->
+              <li class="blank rushdown all-rounder zoner precision hit-run bait-punish turtle grappler footsies">
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <div class="spacer-footer"></div>
+
+      <footer class="footer">
+        <div class="container container-footer">
+          <ul class="menu-footer">
+            <li class="menu-footer-link">
+              <a href="/Submit">Submit Tech｜</a></li>
+            <li class="menu-footer-link">
+              <a href="/Contact">｜Contact</a></li>
+            <li class="spacer-mini"></li>
+            <li class="icon-mini" id="twitter">
+              <a href="https://twitter.com/servingsmash" class="icon-click">
+              </a></li>
+            <li class="icon-mini" id="facebook">
+              <a href="https://www.facebook.com/OneSmash.net" class="icon-click">
+              </a></li>
+          </ul>
+          <div class="icon-footer"></div>
+          <div class="footer-text">
+            <span class="title-footer" id="grey">One stop for Smash 4 tech</span>
+            <span class="title-footer" id="red">Developer:</span>
+            <span class="title-footer" id="white">Julien van Putten</span>
+            <span class="title-footer" id="red">2016 Onesmash.net</span>
+        </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
