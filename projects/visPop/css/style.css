@@ -86,6 +86,7 @@ ol, ul, li {
   font-weight: 200;
   font-size: 1em;
   color: #e1eef6;
+  outline: none;
 }
 .content-day:hover {
 	background-color:transparent;
@@ -113,6 +114,7 @@ ol, ul, li {
   font-family: montserrat;
   text-transform: uppercase;
   margin-top: 20px;
+  outline: none;
 }
 
 .content-pop {
