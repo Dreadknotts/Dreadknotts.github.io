@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500');
+
+body {
+  background: linear-gradient(to right, #00ADB5, #00FFF5 );
+  background-size: cover;
+  background-position: center center;
+  color: #e1eef6;
+  font-size: 16px;
+  line-height: 1.15;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+div{
+  display: block;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+.header-site {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3.750em;
+  background-color: #393E46;
+}
+
+.container {
+  height: inherit;
+  margin: 0 50px;
+}
+
+.header {
+  margin: auto;
+  width: 200px;
+}
+
+.header-icon {
+  position: relative;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url(../assets/earth-globe.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-title {
+  bottom: 15px;
+  position: relative;
+  display: inline-block;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.spacer-header {
+  width: 100%;
+  height:100px;
+}
+
+.content-header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.content-day {
+  display: block;
+  margin: 0;
+	background-color:transparent;
+	border-radius:25px;
+	border:3px solid #E1EEF6;
+	cursor:pointer;
+	padding:5px 50px;
+	text-decoration:none;
+  box-shadow: none;
+  bottom: 0;
+  font-family: montserrat;
+  font-weight: 200;
+  font-size: 1em;
+  color: #e1eef6;
+}
+.content-day:hover {
+	background-color:transparent;
+  box-shadow: 0px 5px #E1EEF6;
+  transition: box-shadow .3s, bottom .3s;
+  position: relative;
+  bottom: 5px
+}
+.content-day:active {
+	position:relative;
+	bottom: -1px;
+  box-shadow: none;
+  transition: box-shadow .1s, bottom .1s;
+}
+
+.content-country {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  font-size: 3em;
+  background-color: transparent;
+  color: #e1eef6;
+  font-family: montserrat;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.content-pop {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 500;
+  float: right;
+  margin-top: 24px;
+  letter-spacing: 2px;
+}
+
+.popVis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+.popDot {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  background-color: #e1eef6;
+  list-style: none;
+  display: inline-block;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.popTomorrow {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 5px #e1eef6;
+}
+
+.spacer-footer {
+  width: 100%;
+  height: 50px;
+}
+
+.footer-main {
+  width: 100%;
+  height: 3.750em;
+  background-color: #393E46;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-text {
+  position: absolute;
+  margin-left: 0px;
+}
+
+.dotKey {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  float: left;
+  margin-top: 22.5px;
+  margin-right: 7px;
+  background-color: white;
+
+}
+
+.info {
+  float: left;
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+#grey {color: grey}
+#blue {color: #00FFF5;}
+#white{color: white }
