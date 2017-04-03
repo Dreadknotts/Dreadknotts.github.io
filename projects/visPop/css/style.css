@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500');
 
+@keyframes Wave {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+
 body {
-  background: linear-gradient(to right, #00ADB5, #00FFF5 );
-  background-size: cover;
+  background: linear-gradient(315deg, #00fff5, #00adb5);
+  background-size: 400% 400%;
   background-position: center center;
   color: #e1eef6;
   font-size: 16px;
@@ -10,6 +16,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
+  animation: Wave 30s ease infinite;
 }
 
 div{
@@ -34,8 +41,7 @@ ol, ul, li {
 }
 
 .header {
-  margin: auto;
-  width: 200px;
+  width: auto;
 }
 
 .header-icon {
@@ -58,7 +64,20 @@ ol, ul, li {
   text-transform: uppercase;
   font-size: 2em;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
+}
+
+.header-subtitle {
+  bottom: -6px;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: grey;
+  letter-spacing: 1.1px;
+  opacity: .75;
+  float: right;
 }
 
 .spacer-header {
@@ -73,13 +92,14 @@ ol, ul, li {
 
 .content-day {
   display: block;
-  margin: 0;
+  margin: 20px 0px 40px 0px;
 	background-color:transparent;
 	border-radius:25px;
 	border:3px solid #E1EEF6;
 	cursor:pointer;
 	padding:5px 50px;
 	text-decoration:none;
+  letter-spacing: 1px;
   box-shadow: none;
   bottom: 0;
   font-family: montserrat;
@@ -107,6 +127,7 @@ ol, ul, li {
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
+  letter-spacing: 2px;
   border: none;
   font-size: 3em;
   background-color: transparent;
@@ -115,15 +136,38 @@ ol, ul, li {
   text-transform: uppercase;
   margin-top: 20px;
   outline: none;
+  transition: all .25s;
 }
 
+.content-country:hover {
+  color: #ff7540;
+}
+
+.content-country:active {
+  color: white;
+  transition: none;
+}
 .content-pop {
   display: inline-block;
   font-size: 3em;
   font-weight: 500;
   float: right;
   margin-top: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+}
+
+.content-vis{
+  position: relative;
+  margin: 0 50px;
+}
+
+.content-main{
+  position: absolute;
+  z-index: 100;
+}
+.content-bg{
+  position: relative;
+  z-index: 0;
 }
 
 .popVis {
@@ -134,12 +178,34 @@ ol, ul, li {
   padding: 0;
   margin: 0;
   width: 100%;
+  z-index: 100;
 }
 
+.bgVis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 0;
+}
 
 .popDot {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
+  opacity: 1;
+  background-color: #e1eef6;
+  list-style: none;
+  display: inline-block;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.bgDot {
+  width: 22px;
+  height: 22px;
   opacity: 1;
   background-color: #e1eef6;
   list-style: none;
@@ -153,6 +219,12 @@ ol, ul, li {
   box-shadow: inset 0 0 0 5px #e1eef6;
 }
 
+.popBG {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px #e1eef6;
+  opacity: .6;
+}
+
 .spacer-footer {
   width: 100%;
   height: 50px;
@@ -160,7 +232,7 @@ ol, ul, li {
 
 .footer-main {
   width: 100%;
-  height: 3.750em;
+  height: 4em;
   background-color: #393E46;
   font-size: 14px;
   position: relative;

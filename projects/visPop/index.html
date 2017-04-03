@@ -13,22 +13,34 @@
 </head>
 <body>
   <header class="header-site">
-    <div class="container header">
-    <div class="header-icon"></div>
-    <h2 class="header-title">VisPop</h2></h>
+    <a href="index.html">
+      <div class="container header">
+        <div class="header-icon"></div>
+        <h2 class="header-title">VisPop</h2></h>
+        <h3 class="header-subtitle">Country Population Today</h3></h>
     </div>
+    </a>
   </header>
   <div class="spacer-header"></div>
   <main class="content-wrapper">
     <div class="container">
     <section class="content-header">
-      <button class="content-day btn" id="day">Today</button>
-      <button class="content-country btn" id="country">World</button>
-      <h1 class="content-pop" id="population"></h1>
+      <div class="content-info">
+        <button class="content-country btn" id="country"></button>
+        <h1 class="content-pop" id="population"></h1>
+      </div>
+      <div class="content-param">
+        <button class="content-day btn" id="day">Today</button>
+      </div>
     </section>
-    <section class="content-main">
-      <ul class="popVis">
-      </ul>
+    </div>
+    <section class="content-vis">
+      <section class="content-main">
+        <ul class="popVis" id="visInfo"></ul>
+      </section>
+      <section class="content-bg">
+        <ul class="bgVis"></ul>
+      </section>
     </section>
   </div>
   </main>
@@ -40,6 +52,7 @@
       <span class="info" id="grey">= 10,000,000 People</span>
       <span class="info" id="blue">Developer:</span>
       <span class="info" id="white">Julien vanPutten</span>
+      <a class="info"  id="white" style="opacity: .3;" href="about.html">About</a>
     </div>
   </div>
   </footer>
