@@ -31,7 +31,7 @@ var jsonInit = (function () {
     $.ajax({
         'async': false,
         'global': false,
-        'url': 'http://api.population.io/1.0/population/' + country + '/today-and-tomorrow/?format=json',
+        'url': 'https://api.population.io/1.0/population/' + country + '/today-and-tomorrow/?format=json',
         'dataType': 'json',
         'success': function (data) {
           jsonInit = data
@@ -135,7 +135,7 @@ function ajaxUpdate() {
       $.ajax({
           'async': false,
           'global': false,
-          'url': 'http://api.population.io/1.0/population/' + country + '/today-and-tomorrow/?format=json',
+          'url': 'https://api.population.io/1.0/population/' + country + '/today-and-tomorrow/?format=json',
           'dataType': 'json',
           'success': function (data) {
             jsonUpdate = data
