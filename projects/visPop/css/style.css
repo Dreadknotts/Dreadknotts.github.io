@@ -137,6 +137,7 @@ ol, ul, li {
   margin-top: 20px;
   outline: none;
   transition: all .25s;
+  padding: 0;
 }
 
 .content-country:hover {
@@ -232,16 +233,15 @@ ol, ul, li {
 
 .footer-main {
   width: 100%;
-  height: 4em;
+  height: 5em;
   background-color: #393E46;
   font-size: 14px;
-  position: relative;
-  bottom: 0;
 }
 
 .footer-text {
   position: absolute;
   margin-left: 0px;
+  margin-top: 7px;
 }
 
 .dotKey {
