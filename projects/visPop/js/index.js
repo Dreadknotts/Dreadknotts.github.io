@@ -256,7 +256,7 @@ var countryIterate = function() {
   $('#country').text(country); //sets html country name
 
   // keeps array from over iterating
-  if (count < 31) {
+  if (count < 30) {
       count++;
   } else {
       count = 0;
