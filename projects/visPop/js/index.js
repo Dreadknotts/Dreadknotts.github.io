@@ -21,15 +21,12 @@ var countryList = [
     "Lebanon",
     "Mexico",
     "Nepal",
-    "Oman",
-    "Puerto Rico",
     "Qatar",
     "Rep of Korea",
     "Russian Federation",
     "South Africa",
     "Spain",
     "Thailand",
-    "Trinidad and Tobago",
     "United Kingdom",
     "United States",
     "Vietnam",
@@ -259,7 +256,7 @@ var countryIterate = function() {
   $('#country').text(country); //sets html country name
 
   // keeps array from over iterating
-  if (count < 34) {
+  if (count < 31) {
       count++;
   } else {
       count = 0;
