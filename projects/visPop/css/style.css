@@ -128,7 +128,7 @@ ol, ul, li {
 }
 
 .content-param{
-  margin: 20px 0px 30px 0px
+  margin: 20px 0px 40px 0px
 }
 
 .content-date{
@@ -283,24 +283,24 @@ border: 0;
 }
 
 .popDot {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   opacity: 1;
   background-color: #e1eef6;
   list-style: none;
   display: inline-block;
-  margin: 2.75px 2.75px;
+  margin: 3.5px 3.5px;
   border-radius: 50%;
 }
 
 .bgDot {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   opacity: 1;
   background-color: #e1eef6;
   list-style: none;
   display: inline-block;
-  margin: 2.75px 2.75px;
+  margin: 3.5px 3.5px;
   border-radius: 50%;
 }
 
