@@ -1,32 +1,47 @@
 var countryList = [
     "World",
-    "ASIA",
-    "OCEANIA",
-    "EUROPE",
-    "NORTHERN AMERICA",
-    "Central America",
-    "South America",
+    "AFRICA",
     "Australia",
-    "Caribbean",
+    "EUROPE",
+    "OCEANIA",
+    "NORTHERN AMERICA",
+    "South America",
+    "Austria",
     "Brazil",
     "Canada",
     "China",
+    "Dominican Republic",
+    "Ecuador",
+    "France",
+    "Germany",
+    "Haiti",
     "India",
-    "Indonesia",
     "Japan",
-    "Nigeria",
+    "Kazakhstan",
+    "Lebanon",
     "Mexico",
-    "Pakistan",
+    "Nepal",
+    "Oman",
+    "Puerto Rico",
+    "Qatar",
+    "Rep of Korea",
     "Russian Federation",
-    "United States"
+    "South Africa",
+    "Spain",
+    "Thailand",
+    "Trinidad and Tobago",
+    "United Kingdom",
+    "United States",
+    "Vietnam",
 ];
 
 // ==================== Variables for ajax init ====================
 var country = countryList[0];
 
-var year = 2017;
-var month = 04;
-var day = 09;
+var year = 2013;
+var month = 01;
+var day = 01;
+
 var date = year + '-' + month + '-' + day;
 
 var sex = 'male';
@@ -67,7 +82,6 @@ var jsonInit = (function() {
         }
     });
     updateVar(country, date, sex, dob);
-    console.log(parameter + '1');
     return jsonInit
 })();
 
@@ -75,7 +89,7 @@ var jsonInit = (function() {
 var pop = jsonInit.total_population;
 var popNumber = pop[0].population;
 var dotTotal;
-var count = 1;
+var count = 0;
 
 // ==================== Init function  ====================
 $(function init() {
@@ -90,8 +104,53 @@ $(function init() {
         dayClick()
     });
     $("#country").click(function() {
+        countryIterate(count);
         ajaxUpdate();
     });
+    $("select").simpleselect({
+  fadingDuration: 100,
+  containerMargin: 0,
+  displayContainerInside: "document"
+  });
+  $('#testCase').click(function(e) {
+    e.preventDefault();
+    filterSwitch();
+    ajaxUpdate();
+  });
+
+//  ==================== Select Functions  ====================
+
+  var selectDay = $("#day-select");
+  selectDay
+    .simpleselect()
+    .on("change", function() {
+      var dayObject = $(selectDay.val());
+      day = dayObject.selector;
+      dateUpdate(year, month, day);
+      ajaxUpdate();
+  });
+
+  var selectMonth = $("#month-select");
+  selectMonth
+    .simpleselect()
+    .on("change", function() {
+      var monthObject = $(selectMonth.val());
+      month = monthObject.selector;
+      dateUpdate(year, month, day);
+      ajaxUpdate();
+  });
+
+  var selectYear = $("#year-select");
+  selectYear
+    .simpleselect()
+    .on("change", function() {
+      var yearObject = $(selectYear.val());
+      year = yearObject.selector;
+      dateUpdate(year, month, day);
+      ajaxUpdate();
+  });
+
+
 });
 
 //  ==================== Dot Calculaton Function  ====================
@@ -150,8 +209,20 @@ var dayClick = function() {
     };
 };
 
-$('#testCase').click(function() {});
+filterSwitch = function() {
+  var dateFilter = $('.content-date');
+  dateFilter.toggleClass('hidden');
 
+  if (dateFilter.hasClass('hidden')) {
+    $('.content-day').show();
+    $(".header-subtitle").text('Country Population Today')
+    parameter = popTodayAndTomorrow
+  } else {
+    $('.content-day').hide();
+    $(".header-subtitle").text('Country Population By Date')
+    parameter = popByDate;
+  };
+};
 // ==================== Update functions ====================
 var popUpdate = function(pop) {
     var dayBtn = $("#day")
@@ -169,13 +240,35 @@ var popUpdate = function(pop) {
     };
 };
 
+var popDateUpdate = function(pop){
+  popNumber = pop.population;
+  $("li").remove('#dot');
+  dotTotalCalc(popNumber);
+  dotBuildToday(dotTotal);
+}
+
 var paraUpdate = function() {
   if (parameter.match('today-and-tomorrow')) {
   parameter = popTodayAndTomorrow ;
 } else {
-  console.log('lol sorry')
   parameter = popByDate;
 }
+};
+
+var countryIterate = function() {
+  $('#country').text(country); //sets html country name
+
+  // keeps array from over iterating
+  if (count < 34) {
+      count++;
+  } else {
+      count = 0;
+  };
+};
+
+
+var dateUpdate = function(year, month, day) {
+  date = year + '-' + month + '-' + day;
 };
 
 //  ==================== Style Functions  ====================
@@ -204,7 +297,8 @@ var ajaxUpdate = function() {
         $.ajax({
             'async': false,
             'global': false,
-            'url': 'http://api.population.io/1.0/http://api.population.io/1.0/' + parameter,
+            'timeout': 300000,
+            'url': 'http://api.population.io/1.0/' + parameter,
             'dataType': 'json',
             'success': function(data) {
                 jsonUpdate = data
@@ -212,20 +306,18 @@ var ajaxUpdate = function() {
             'error': function(jqXHR, textStatus, errorThrown) {
                 return $("#population").text('Sorry!  There was an error requesting your data.')
             }
-        });
+        })
         $('#country').text(country); //sets html country name
-
-        // keeps array from over iterating
-        if (count < 19) {
-            count++;
-        } else {
-            count = 0;
-        };
         // console.log(jsonUpdate);
         return jsonUpdate;
     })();
     pop = jsonUpdate.total_population;
+
+    if (pop[0] == undefined) {
+      popDateUpdate(pop);
+    } else {
     popUpdate(pop);
+  };
 };
 
 
