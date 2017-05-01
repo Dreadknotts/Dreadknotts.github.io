@@ -69,7 +69,7 @@ var jsonInit = (function() {
     $.ajax({
         'async': false,
         'global': false,
-        'url': 'https://api.population.io/1.0/' + parameter,
+        'url': 'http://api.population.io/1.0/' + parameter,
         'dataType': 'json',
         'success': function(data) {
             jsonInit = data
@@ -295,7 +295,7 @@ var ajaxUpdate = function() {
             'async': false,
             'global': false,
             'timeout': 300000,
-            'url': 'https://api.population.io/1.0/' + parameter,
+            'url': 'http://api.population.io/1.0/' + parameter,
             'dataType': 'json',
             'success': function(data) {
                 jsonUpdate = data
