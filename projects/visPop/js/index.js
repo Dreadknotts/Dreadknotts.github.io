@@ -152,7 +152,7 @@ $(function init() {
 
 //  ==================== Dot Calculaton Function  ====================
 var dotTotalCalc = function(popNumber) {
-    dotTotal = Math.round(popNumber / 10000000);
+    dotTotal = Math.round(popNumber / 5000000);
     return dotTotal
 };
 
