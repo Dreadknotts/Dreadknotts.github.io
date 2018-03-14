@@ -319,4 +319,4 @@ var ajaxUpdate = function() {
 
 
 // NOTES
-// Gonna need an update date/sex/dob function
+// Push to confirm version change
